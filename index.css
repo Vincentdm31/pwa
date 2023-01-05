@@ -1,0 +1,31 @@
+* {
+  user-select: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+body {
+  /* cancel pull to refresh */
+  overscroll-behavior-y: contain;
+}
+
+/* It targets only the app used within the browser */
+@media (display-mode: browser) {
+  h1 {
+    color: red;
+  }
+}
+/* It targets only the app used with a system icon in standalone mode */
+@media (display-mode: standalone) {
+  h1 {
+    color: blue;
+  }
+}
+/* It targets only the app used with a system icon in all mode */
+@media (display-mode: standalone),
+  (display-mode: fullscreen),
+  (display-mode: minimal-ui) {
+  h1 {
+    color: green;
+  }
+}
