@@ -31,7 +31,7 @@ function updateOnlineStatus(event) {
 
   status.className = condition;
   status.innerHTML = condition.toUpperCase();
-  console.log('fdff')
 }
+updateOnlineStatus();
 window.addEventListener("online", updateOnlineStatus);
 window.addEventListener("offline", updateOnlineStatus);
