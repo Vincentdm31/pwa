@@ -24,7 +24,7 @@ const registerServiceWorker = async () => {
   }
 };
 
-function updateOnlineStatus(event) {
+function updateOnlineStatus() {
   const status = document.getElementById("status");
 
   var condition = navigator.onLine ? "online" : "offline";
