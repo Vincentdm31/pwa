@@ -8,7 +8,7 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "cat.png",
+      "src": "cat-48.png",
       "type": "image/png",
       "sizes": "48x48"
     },
@@ -18,5 +18,5 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "vincentdm31.github.io/pwa"
+  "start_url": "/"
 }
