@@ -4,7 +4,7 @@
   "theme_color": "#eb5252",
   "background_color": "#000000",
   "display": "fullscreen",
-  "scope": "/pwa/",
+  "scope": "https://vincentdm31.github.io/pwa/",
   "orientation": "portrait",
   "icons": [
     {
