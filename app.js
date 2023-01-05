@@ -2,7 +2,7 @@ const registerServiceWorker = async () => {
   if ("serviceWorker" in navigator) {
     try {
       const registration = await navigator.serviceWorker.register(
-        "/pwa/sw.js",
+        "https://vincentdm31.github.io/pwa/sw.js",
         {
           scope: "https://vincentdm31.github.io/pwa/",
         }
