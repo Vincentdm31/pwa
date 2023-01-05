@@ -29,7 +29,7 @@ self.addEventListener("activate", function (event) {
 self.addEventListener("fetch", function (event) {
   console.log("Handling fetch event for", event.request.url);
 
-  event.respondWith(
+  event.respondWith(async () => {
     // Opens Cache objects that start with 'font'.
     caches.open(CURRENT_CACHES["font"]).then(function (cache) {
       return cache
@@ -47,6 +47,6 @@ self.addEventListener("fetch", function (event) {
 
           throw error;
         });
-    })
-  );
+    });
+  });
 });
