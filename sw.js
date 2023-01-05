@@ -1,7 +1,19 @@
-const urlsToCache = ["/", "app.js", "index.css", "cat-48.png", "cat.png"];
+const addResourcesToCache = async (resources) => {
+  const cache = await caches.open("v1");
+  await cache.addAll(resources);
+};
+
 self.addEventListener("install", (event) => {
-  event.waitUntil(async () => {
-    const cache = await caches.open("pwa-assets");
-    return cache.addAll(urlsToCache);
-  });
+  event.waitUntil(
+    addResourcesToCache([
+      "/pwa/",
+      "/pwa/index.html",
+      "/pwa/index.css",
+      "/pwa/app.js",
+      "/pwa/cat-48.png",
+      "/pwa/cat.png",
+    ])
+  );
 });
+
+self.addEventListener("fetch", () => console.log("fetch"));
