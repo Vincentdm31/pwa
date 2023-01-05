@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   registerServiceWorker();
-
+  console.log('ici')
   var status = document.getElementById("status");
 
   function updateOnlineStatus(event) {
