@@ -29,3 +29,18 @@ body {
     color: green;
   }
 }
+
+#status {
+  width: 100%;
+  font: bold 1em sans-serif;
+  color: #fff;
+  padding: 0.5em;
+}
+
+.online {
+  background: green;
+}
+
+.offline {
+  background: red;
+}
