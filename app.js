@@ -1,18 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
   registerServiceWorker();
-  console.log('ici')
-  var status = document.getElementById("status");
-
-  function updateOnlineStatus(event) {
-    var condition = navigator.onLine ? "online" : "offline";
-
-    status.className = condition;
-    status.innerHTML = condition.toUpperCase();
-    console.log('status', condition)
-  }
-
-  document.addEventListener("online", updateOnlineStatus);
-  document.addEventListener("offline", updateOnlineStatus);
 });
 
 const registerServiceWorker = async () => {
