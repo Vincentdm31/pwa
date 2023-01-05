@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     status.className = condition;
     status.innerHTML = condition.toUpperCase();
+    console.log('status', condition)
   }
   window.addEventListener("online", updateOnlineStatus);
   window.addEventListener("offline", updateOnlineStatus);
