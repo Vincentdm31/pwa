@@ -4,7 +4,6 @@
   "theme_color": "#eb5252",
   "background_color": "#000000",
   "display": "fullscreen",
-  "scope": "/pwa/",
   "orientation": "portrait",
   "icons": [
     {
