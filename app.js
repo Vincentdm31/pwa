@@ -10,8 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
     status.innerHTML = condition.toUpperCase();
     console.log('status', condition)
   }
-  window.addEventListener("online", updateOnlineStatus);
-  window.addEventListener("offline", updateOnlineStatus);
+
+  document.addEventListener("online", updateOnlineStatus);
+  document.addEventListener("offline", updateOnlineStatus);
 });
 
 const registerServiceWorker = async () => {
