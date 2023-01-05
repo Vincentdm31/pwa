@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", () => {
+  registerServiceWorker();
+});
+
 const registerServiceWorker = async () => {
   if ("serviceWorker" in navigator) {
     try {
@@ -19,7 +23,3 @@ const registerServiceWorker = async () => {
     }
   }
 };
-
-// …
-
-registerServiceWorker();
