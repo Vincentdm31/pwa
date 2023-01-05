@@ -18,7 +18,7 @@ self.addEventListener("install", (event) => {
 
 self.addEventListener("fetch", () => console.log("fetch"));
 
-window.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   var status = document.getElementById("status");
 
   function updateOnlineStatus(event) {
@@ -27,6 +27,6 @@ window.addEventListener("DOMContentLoaded", function () {
     status.className = condition;
     status.innerHTML = condition.toUpperCase();
   }
-  window.addEventListener("online", updateOnlineStatus);
-  window.addEventListener("offline", updateOnlineStatus);
+  document.addEventListener("online", updateOnlineStatus);
+  document.addEventListener("offline", updateOnlineStatus);
 });
