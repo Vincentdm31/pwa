@@ -17,16 +17,3 @@ self.addEventListener("install", (event) => {
 });
 
 self.addEventListener("fetch", () => console.log("fetch"));
-
-document.addEventListener("DOMContentLoaded", function () {
-  var status = document.getElementById("status");
-
-  function updateOnlineStatus(event) {
-    var condition = navigator.onLine ? "online" : "offline";
-
-    status.className = condition;
-    status.innerHTML = condition.toUpperCase();
-  }
-  document.addEventListener("online", updateOnlineStatus);
-  document.addEventListener("offline", updateOnlineStatus);
-});
